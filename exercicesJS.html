@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        // // MOYENNE DE 3 NOTES
+        // let DC1 = Number(prompt("saisir 1e note:"));
+        // let DC2 = Number(prompt("saisir 2e note:"));
+        // let DS = Number(prompt("saisir 3e note:"));
+    
+        // let moyenne = (DC1 + DC2 + DS) / 3;
+        // document.write(`La moyenne est de ${moyenne}`);
+
+
+        
+        // //CONDITION multiplier 2 nbres saisis et dire si negatif ou positif A*B = result 
+        // let A = Number(prompt("saisir le 1e nombre:"));
+        // let B = Number(prompt("saisir le 2e nombre:"));
+        // let result = A * B;
+
+        // if (result < 0) {
+        //     document.write(`le résultat  ${A} x ${B} = ${result} est négatif `);
+        // }
+        //     else {
+        //         document.write(`le résultat  ${A} x ${B} = ${result} est positif `);
+        //     }
+        
+
+        // Pour simplifier l'écriture variable signe
+        let A = Number(prompt("saisir le 1e nombre:"));
+        let B = Number(prompt("saisir le 2e nombre:"));
+        let result = A * B;
+        let signe;
+
+        if (result > 0) {
+            signe = "positif";
+        }
+            else {
+                signe = "négatif";
+            }
+            document.write(`${A} x ${B} = ${result} est ${signe} `);
+        
+
+        
+    
+    </script>
+    
+</body>
+</html>
