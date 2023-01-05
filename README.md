@@ -1,2 +1,2 @@
 # d-couverte-Javascript
-découverte Javascript avec graphikart
+découverte Javascript avec grafikart
