@@ -18,12 +18,11 @@
         // document.write(`La moyenne est de ${moyenne}`);
 
 
-        
-        // //CONDITION multiplier 2 nbres saisis et dire si negatif ou positif A*B = result 
+
+        // //CONDITION multiplier 2 nbres saisis et dire si A*B = result est negatif ou positif  
         // let A = Number(prompt("saisir le 1e nombre:"));
         // let B = Number(prompt("saisir le 2e nombre:"));
         // let result = A * B;
-
         // if (result < 0) {
         //     document.write(`le résultat  ${A} x ${B} = ${result} est négatif `);
         // }
@@ -32,23 +31,86 @@
         //     }
         
 
-        // Pour simplifier l'écriture variable signe
-        let A = Number(prompt("saisir le 1e nombre:"));
-        let B = Number(prompt("saisir le 2e nombre:"));
-        let result = A * B;
-        let signe;
+        // //Pour simplifier l'écriture variable signe
+        // let A = Number(prompt("saisir le 1e nombre:"));
+        // let B = Number(prompt("saisir le 2e nombre:"));
+        // let result = A * B;
+        // let signe;
+        // if (result >= 0) {
+        //     signe = "positif";
+        // }
+        //     else {
+        //         signe = "négatif";
+        //     }
+        //     document.write(`${A} x ${B} = ${result} est ${signe} `);
+        
 
-        if (result > 0) {
-            signe = "positif";
-        }
-            else {
-                signe = "négatif";
+
+        // // BOUCLES FOR utilisé pour itération ou pour les tableaux
+        // // ECRIS BONJOUR 10 FOIS
+        // for(let i= 0; i< 10; i ++) {
+        //     document.write("bonjour");
+        //     console.log("Bonjour");
+        // }
+        
+        // // PARCOURIR DES TABLEAUX
+        // let notes = [12, 2, 45, 8]
+        // for(let i = 0; i < notes.length; i++) {
+        //     console.log(notes[i])
+        // }
+
+        // //SOLUTION PLUS SIMPLE: FOR IN - donne les index du tableaux
+        // let notes = [12, 2, 45, 8]
+        // for(let i in notes) {
+        //     console.log(notes[i])
+        // }
+
+        // const eleves = ['Jean', 'Marc', 'Marie']
+        // for (const i in eleves) {
+        //      console.log(i) // affichera alternativement : 0, 1, 2   
+    //     }
+        
+        //     const eleves = ['Jean', 'Marc', 'Marie']
+        // for (const eleve of eleves) {
+        //     console.log(eleve) // affichera alternativement : Jean, Marc, Marie
+        // }
+        
+
+        // EXERCICES1 boucle: Pour cet exercice on demandera à l'utilisateur (à l'aide de prompt) un nombre à l'utilisateur entre 0 et 10, on affichera ensuite tous les nombres sous le nombre indiqué par l'utilisateur (s'il rentre 4, on affichera 4, 3, 2, 1, 0). Si l'utilisateur rentre un chiffre erroné on affichera un message d'erreur.
+
+        // let nbre = Number(prompt("donner un nombre entre 0 et 10 :"));
+        // if (nbre < 0 || nbre > 10) {
+        //     console.log("le nombre n'est pas compris entre 0 et 10");
+        // } else 
+        // //utilisation boucle WHILE
+        // while(nbre >= 0){
+        //     console.log(nbre);
+        //     nbre = nbre -1;  //ou nbre -- décrémente
+        // }
+        
+        // //utilisation boucle FOR
+        // for(let i = nbre; i >= 0 ; i--){
+        // console.log(i);
+        // }
+
+        //EXERCICES2 BOUCLE : On créera une variable guess qui contiendra un nombre entre 0 et 10, l'objectif sera ensuite de faire deviner ce chiffre à l'utilisateur. Si l'utilisateur se trompe on lui donnera une indication "plus" ou "moins" pour l'orienter vers la bonne réponse.
+
+        const guess = 7;
+        let chiffre;
+        while ( chiffre !== guess) {
+            chiffre = Number (prompt( "donner un nombre" ));
+        if (chiffre < guess) {
+            console.log(`le nombre est plus grand que ${chiffre} `);
+        } 
+            else if (chiffre > guess ){
+                console.log(`le nombre est plus petit que ${chiffre} `);
             }
-            document.write(`${A} x ${B} = ${result} est ${signe} `);
-        
+                else if (chiffre === guess){
+                    console.log("bravo tu as trouvé ");
+                }
+        }
 
-        
-    
+
     </script>
     
 </body>
